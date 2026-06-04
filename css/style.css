@@ -1,0 +1,93 @@
+/* --- Color Variables --- */
+:root {
+    --primary-color: #ff4d4d;
+    --secondary-color: #1a1a2e;
+    --accent-color: #ffd700;
+    --dark-bg: #0f0f23;
+    --light-text: #ffffff;
+    --gray-text: #b0b0b0;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Navigation --- */
+.navbar {
+    background-color: rgba(15, 15, 35, 0.95) !important;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--light-text);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(15, 15, 35, 0.9), rgba(26, 26, 46, 0.8)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920') center/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+/* --- Buttons --- */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 35px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #ff3333;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 77, 77, 0.4);
+}
