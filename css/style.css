@@ -231,3 +231,198 @@ a:hover {
     color: var(--gray-text);
     margin: 0;
 }
+.pricing-section {
+    background-color: var(--dark-bg);
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover,
+.pricing-card.featured {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1), transparent);
+}
+
+.pricing-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.pricing-price span {
+    font-size: 1rem;
+    color: var(--gray-text);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    color: var(--gray-text);
+}
+
+.pricing-features li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* --- Classes Section --- */
+.classes-section {
+    background-color: var(--secondary-color);
+}
+
+.class-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.class-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.class-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.class-info {
+    padding: 25px;
+}
+
+.class-schedule {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.schedule-badge {
+    background: rgba(255, 77, 77, 0.2);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* --- Trainers Section --- */
+.trainers-section {
+    background-color: var(--dark-bg);
+}
+
+.trainer-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+}
+
+.trainer-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.trainer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.trainer-card:hover .trainer-image img {
+    transform: scale(1.1);
+}
+
+.trainer-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.trainer-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.trainer-info span {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+.trainer-social {
+    margin-top: 15px;
+}
+
+.trainer-social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(255, 77, 77, 0.2);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.trainer-social a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background-color: var(--secondary-color);
+}
+
+.contact-info-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
