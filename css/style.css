@@ -1,3 +1,4 @@
+
 /* --- Color Variables --- */
 :root {
     --primary-color: #ff4d4d;
@@ -91,7 +92,6 @@ a:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(255, 77, 77, 0.4);
 }
-
 
 .btn-outline-custom {
     border: 2px solid var(--primary-color);
@@ -231,6 +231,8 @@ a:hover {
     color: var(--gray-text);
     margin: 0;
 }
+
+/* --- Pricing Section --- */
 .pricing-section {
     background-color: var(--dark-bg);
 }
@@ -426,6 +428,7 @@ a:hover {
     color: var(--primary-color);
     margin-bottom: 15px;
 }
+
 .contact-form {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -497,7 +500,6 @@ a:hover {
 .footer-social {
     margin-top: 20px;
 }
-
 
 .footer-social a {
     display: inline-block;
